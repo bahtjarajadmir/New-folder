@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0e0b18;
+    color: #efedf8;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span, .category {
+    color: #8b6dff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-button, .primary-button, .add-button {
+    background: #8b6dff;
+    color: #0e0b18;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.nav-button:hover, .primary-button:hover, .add-button:hover {
+    transform: scale(1.08);
+}
+
+.hero, .contact {
+    background: #171325;
+    padding: 80px 8%;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin: 10px 0 15px;
+}
+
+.hero-text, .desc, footer p, .contact p {
+    color: #a39ebc;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    color: #8b6dff;
+    font-weight: bold;
+}
+
+.products {
+    padding: 60px 8%;
+}
+
+.products h2, .contact h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    perspective: 1000px;
+}
+
+.card {
+    width: 300px;
+    background: #171325;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px) rotateX(5deg) rotateY(-5deg);
+}
+
+.art {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 56px;
+}
+
+.art-purple {
+    background: #4b2fc4;
+}
+
+.art-green {
+    background: #0e7a5a;
+}
+
+.icon {
+    animation: bob 3s ease-in-out infinite;
+}
+
+@keyframes bob {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+.info {
+    padding: 20px;
+}
+
+.info h3 {
+    margin: 5px 0;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    color: #ffb020;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.contact {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hero h1 {
+        font-size: 40px;
+    }
+}
